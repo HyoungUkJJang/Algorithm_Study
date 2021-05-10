@@ -37,7 +37,17 @@
 # print(str2[14:-1]) # 14 ~ -2
 
 #String format
-num=6
-day="mon"
-fm = "now %d and %s days" %(num,day)
-print(fm)
+# num=6
+# day="mon"
+# fm = "now %d and %s days" %(num,day)
+# print(fm)
+
+# a = "%-10d lets go" %5
+# print(a)
+
+# direct format #
+# str = "morning"
+# a = "hi good {0}".format(str)
+# print(a)
+
+"{0:<10}".format("hi")
