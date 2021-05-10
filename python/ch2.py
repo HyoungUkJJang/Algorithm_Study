@@ -32,6 +32,6 @@ a = "hello"
 # print(ex.lstrip()+a)
 
 # 7. rstrip
-ex="hi.          "
-print(ex+a)
-print(ex.rstrip()+a)
+# ex="hi.          "
+# print(ex+a)
+# print(ex.rstrip()+a)
