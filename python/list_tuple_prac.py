@@ -106,3 +106,18 @@
 # j.extend(k)
 # print(j)
 
+
+#---------------Tuple---------------------#
+
+# tuble Practice 1
+
+#t1 = ()
+#t2 = (1,)
+#t3 = (1,2,3)
+#t4 = 1,2,3
+#t5 = ('a','b',('ab','cd'))
+
+
+#print(t4[0])
+#print(t4*3)
+#print(len(t3))
