@@ -14,3 +14,14 @@
 #         print('error')
 
   
+# 3
+# pivot = num =int(input())
+# check = 0
+# cnt = 0
+# while True :
+#     check = num//10 + num%10
+#     cnt=cnt+1
+#     num = int(str(num%10)+str(check%10))
+#     if num == pivot :
+#         break
+# print(cnt)
