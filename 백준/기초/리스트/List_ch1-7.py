@@ -61,4 +61,16 @@
 #             pivot = 1 
 #     print(sum)
     
-  
+
+# 7
+# T = int(input())
+# for i in range(0,T) :
+#     jum = list(map(int,input().split()))
+#     avg = sum(jum[1:])/jum[0]
+#     cnt = 0
+#     for j in range(1,len(jum)) :
+#         if jum[j] > avg :
+#             cnt = cnt +1
+#     result = cnt / jum[0] * 100
+#     print(f'{result:.3f}%')
+    
