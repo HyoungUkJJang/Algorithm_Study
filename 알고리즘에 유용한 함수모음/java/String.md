@@ -7,4 +7,6 @@ toCharArray() > 문자열을 char 원소 상태인 배열로 리턴해줌
 
 [Charector 정리]
 
-Charector.toUpperCase() or toLowerCase() 
+Charector.toUpperCase() or toLowerCase() > 대소문자 변환
+Charector.isUpperCase() or isLowerCase() > 대문자인지 소문자인지 검사
+
