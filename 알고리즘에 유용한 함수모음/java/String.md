@@ -10,7 +10,9 @@ new StringBuilder(str) 객체는 문자열을 뒤집을때 유용하다 > revers
 
 [Charector 정리]
 
-Charector.toUpperCase() or toLowerCase() > 대소문자 변환
+Character.toUpperCase() or toLowerCase() > 대소문자 변환
 
-Charector.isUpperCase() or isLowerCase() > 대문자인지 소문자인지 검사
+Character.isUpperCase() or isLowerCase() > 대문자인지 소문자인지 검사
+
+Character.isAlphabetic() > 해당 문자가 알파벳인지 확인
 
