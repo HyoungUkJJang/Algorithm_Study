@@ -80,3 +80,27 @@ class Main {
 }
 
 */
+/* 모범답안2
+
+import java.util.*;
+
+class Main {
+    
+    public String solution(String x) {
+        String answer="NO";
+        String tmp = new StringBuilder(x).reverse().toString();
+        if(str.equalsIgnoreCase(tmp)) answer="YES"; // 대소문자 신경안쓰는 이퀄스
+        
+        return answer;
+      }
+    public static void main(String[] args) {
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+        String str = kb.next();
+        System.out.println(T.solution(str));
+
+    }
+    
+}
+
+*/
