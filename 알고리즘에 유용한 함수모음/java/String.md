@@ -8,6 +8,8 @@ toCharArray() > 문자열을 char 원소 상태인 배열로 리턴해줌
 
 new StringBuilder(str) 객체는 문자열을 뒤집을때 유용하다 > reverse() 
 
+if(str.equalsIgnoreCase(tmp)) > 문자열 검사할때 대소문자를 무시하고 검사한다.
+
 [Charector 정리]
 
 Character.toUpperCase() or toLowerCase() > 대소문자 변환
