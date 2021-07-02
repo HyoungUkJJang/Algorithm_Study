@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public int solution(int[] arr){
-
+        int max=arr[0];
         int count=1;
-        if(arr.length > 0){
             for(int i=1;i<arr.length;i++){
-                if(arr[i] > arr[i-1]) count++;
-            }
+                    if(arr[i] > max) {
+                        count++;
+                        max=arr[i];
+                }
         }
         return count;
     }
