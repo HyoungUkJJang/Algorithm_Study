@@ -35,3 +35,36 @@ public class Main {
 
     }
 }
+/* 시간복잡도 줄이기
+import java.util.Scanner;
+
+public class Main {
+
+    public int solution(int[] arr,int k){
+        int answer = Integer.MIN_VALUE;
+        int cnt=0,lt=0;
+        for (int rt = 0; rt < arr.length; rt++) {
+            if(arr[rt]==0) cnt++;
+            while(cnt>k) {
+                if(arr[lt]==0) cnt--;
+                lt++;
+            }
+            answer=Math.max(answer,rt-lt+1);
+        }
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
+        int k = kb.nextInt();
+        int[] arr1 = new int[n];
+        for(int i=0;i<n;i++) arr1[i] = kb.nextInt();
+
+        System.out.println(T.solution(arr1,k));
+
+    }
+}
+*/
