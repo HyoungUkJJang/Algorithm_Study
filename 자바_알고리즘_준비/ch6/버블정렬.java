@@ -5,7 +5,7 @@ public class Main {
 
     public int[] solution(int[] arr)
     {
-        for(int i=0;i<arr.length;i++) {
+        for(int i=0;i<arr.length-1;i++) {
             int tmp=0;
             for(int j=0;j<arr.length-i-1;j++) {
                 if(arr[j] > arr[j+1]) {
