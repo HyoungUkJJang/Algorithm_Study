@@ -34,9 +34,12 @@ public class Main {
         Arrays.sort(arr);
         int lt=0,rt=arr.length-1;
 
-        for(int i=0;i<arr.length;i++) {
+        while(lt<=rt) {
             int mid = (lt+rt) / 2;
-            if(arr[mid] == k) return mid+1;
+            if(arr[mid] == k) {
+            return mid+1;
+            break;
+            }
             else if(arr[mid] < k) lt=mid+1;
             else rt=mid-1;
         }
