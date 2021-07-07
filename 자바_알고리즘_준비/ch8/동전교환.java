@@ -35,3 +35,41 @@ public class Main {
         System.out.println(min);
     }
 }
+/*
+public class Main {
+    static String answer = "NO";
+    static int n,m, min = Integer.MAX_VALUE;
+    static int[] krr;
+    boolean flag = false;
+
+    public void DFS(int L,int sum, Integer[] arr) {
+        //if(cnt>min) return;
+        if(sum>m || L>=min ) return;
+
+        if(sum==m) {
+            min = Math.min(min,L);
+            return;
+        }
+        else {
+            for(int i=0;i<n;i++) {
+
+                DFS(L + 1, sum + arr[i], arr);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+        n = kb.nextInt(); // 동전개수
+        Integer[] arr = new Integer[n]; // 동전종류 들어가있는곳
+        for (int i = 0; i < n; i++) {
+                arr[i] = kb.nextInt();
+        }
+        Arrays.sort(arr, Collections.reverseOrder());
+        m = kb.nextInt(); // 거슬러 받을돈
+        T.DFS(0,  0, arr);
+        System.out.println(min);
+    }
+}
+*/
