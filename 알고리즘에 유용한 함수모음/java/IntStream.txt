@@ -1,0 +1,5 @@
+Intstream 
+
+for(int i=0;i<=10;i++) System.out.println(i)를
+
+IntStream.range(1,11).forEach(System.out::println); 로 바꿀 수 있다.
