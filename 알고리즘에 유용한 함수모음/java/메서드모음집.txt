@@ -20,3 +20,11 @@ Character.isUpperCase() or isLowerCase() > 대문자인지 소문자인지 검�
 
 Character.isAlphabetic() > 해당 문자가 알파벳인지 확인
 
+
+// 오브젝트 복사
+int a[] = {1,2,3,4,5};
+int b[] = a.clone();
+Arrays.copyOf(a);
+
+// 최대값 최소값 배열에서 스트림으로 찾기
+Arrays.stream(arr).min().getAsInt() // sum과 max 등 다양하다 필터도 적용 가능 스트림을 연습하자..
