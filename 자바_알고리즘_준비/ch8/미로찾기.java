@@ -1,44 +1,37 @@
 public class Main {
-    static int[][] miro;
-    static int[] start,finish;
+    static int[] dx = {-1,0,1,0}; // 위아래
+    static int[] dy = {0,1,0,-1}; // 왼쪽오른쪽
+
+    static int[][] board;
     static int answer=0;
 
-    public void DFS(int L, int[][] arr, int col, int row) {
-        if(L==arr.length) return;
-        else{
-            if(col == 0 && row == 0) // Top Left X
-            {
+    public void DFS(int x, int y) {
 
-                DFS(L+1,arr,col,row+1); // Right
-                DFS(L+1,arr,col+1,row); // down
-            }
-            else if(col == arr.length-1 && row == arr.length-1) {
-    
-            }
-            else if(col == 0) {
-                DFS(L+1,arr,col,row+1); // Right
-                DFS(L+1,arr,col+1,row); // down
-                DFS(L+1,arr,col-1,row); // TOP
-            }
-            
+        if(x==7 && y ==7) answer++;
+        else{
+            for (int i = 0; i < 4; i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+                if (nx >= 1 && nx <= 7 && ny >= 1 && ny <= 7 && board[nx][ny] == 0) {
+                    board[nx][ny] = 1;
+                    DFS(nx,ny);
+                    board[nx][ny] = 0;
+                }
+;            }
         }
     }
 
     public static void main(String[] args) {
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
-        miro = new int[7][7];
-        for (int i = 0; i < 7; i++) {
-            for (int j = 0; j < 7; j++) {
-                miro[i][j] = kb.nextInt();
+        board = new int[8][8];
+        for (int i = 1; i <=7; i++) {
+            for (int j = 1; j <=7; j++) {
+                board[i][j] = kb.nextInt();
             }
         }
-        start = new int[2];
-        finish = new int[2];
-        start[0] = 0;
-        start[1] = 0;
-        finish[0] = miro.length-1;
-        finish[1] = miro.length-1;
-        T.DFS(0,miro,0,0);
+        board[1][1] = 1;
+        T.DFS(1, 1);
+        System.out.println(answer);
     }
 }
