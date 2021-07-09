@@ -14,6 +14,8 @@ if(str.equalsIgnoreCase(tmp)) > 문자열 검사할때 대소문자를 무시하
 
 contain - 특정 단어 확인 true / false
 
+startWith(str) -단어가 특정 문자열로 시작하는가 true/false
+
 [Charector 정리]
 
 Character.toUpperCase() or toLowerCase() > 대소문자 변환
